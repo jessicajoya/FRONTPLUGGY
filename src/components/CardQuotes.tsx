@@ -1,4 +1,5 @@
 import { Quote } from "../interfaces/QuotesInterface";
+import { FlippingCard } from 'react-ui-cards';
 
 
 interface PropsQuotes{
@@ -9,9 +10,9 @@ export default function CardQuotes({quotes}:PropsQuotes) {
   return (
    <>
      {quotes.map((quote) => (
-      <div>
-        <h1>{quote.source}</h1>
-      </div>
+
+<h1></h1>
+
     ))}
    </>
   )
