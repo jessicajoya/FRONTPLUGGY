@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import 'bootswatch/dist/materia/bootstrap.min.css'
 import './index.css';
-import App from './App';
+import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App title='Comparacion Dolar Blue'/>
   </React.StrictMode>,
   document.getElementById('root')
 );
