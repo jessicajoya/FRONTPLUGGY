@@ -19,6 +19,7 @@ export default function CardQuotes({quotes}:PropsQuotes) {
           <Row xs={1} md={1} className="card mb-5" >
             <Col>
               <Card className="card p-5">
+               <Card.Header as="h5">Informacion obtenida de:</Card.Header>
                 <Card.Header as="h5">{quote.source}</Card.Header>
                 <Card.Body>
                   <Card.Title>buy price {quote.buy_price}</Card.Title>
