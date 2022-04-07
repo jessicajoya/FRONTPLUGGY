@@ -5,14 +5,11 @@ import { Quote } from './interfaces/QuotesInterface';
 
 import CardQuotes from './components/CardQuotes';
 
-
-
+import { render } from "react-dom"
 
 interface AppProps {
   title: string
 }
-
-
 
 export function App({ title }: AppProps) {
 
@@ -36,15 +33,20 @@ export function App({ title }: AppProps) {
   ])
 
 
-
+  const data =  fetch('/quotes',{ method: 'GET',
+  })
+  .then(response => response.json())
+  .then(data => console.log(data));
+  
+// console.log(data)
+  
   return (
-    
     <div >
       <div className="bg-dark text-white" > 
       <h1>{title}</h1>
       </div>
       <main>
-        <CardQuotes quotes={quotes} />
+        {/* <CardQuotes quotes={quotes} /> */}
       </main>
     </div>
 
