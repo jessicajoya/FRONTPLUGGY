@@ -1,5 +1,4 @@
 import React from 'react';
-// import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 
@@ -10,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App title='Comparacion Dolar Blue'/>
+    <App title='COMPARACION DOLAR BLUE' />
   </React.StrictMode>,
   document.getElementById('root')
 );
