@@ -16,17 +16,17 @@ export default function CardQuotes({quotes}:PropsQuotes) {
    <>
       <CardGroup>
       {quotes.map((quote) => (
-          <Row xs={1} md={1} className="card mb-5">
+          <Row xs={1} md={1} className="card mb-5" >
             <Col>
-              <Card >
+              <Card className="card p-5">
                 <Card.Header as="h5">{quote.source}</Card.Header>
                 <Card.Body>
-                  <Card.Title>{quote.sell_price} {quote.buy_price}</Card.Title>
+                  <Card.Title>buy price {quote.buy_price}</Card.Title>
                   <Card.Title>Sell price {quote.sell_price}</Card.Title>
                   <Card.Text>
-                  With supporting text below as a natural lead-in to additional content.
+                  Estos valores se encuentran actualizados.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Button variant="primary">Ir a la fuente</Button>
                 </Card.Body>
               </Card>
             </Col>
